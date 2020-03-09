@@ -1,19 +1,32 @@
 package com.company;
 
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Cart {
-
-    /**
-     * @element-type Item
-     */
-    public Vector contents;
+    public List<Item> contents;
 
     public Integer total() {
-        return null;
+        int sum = 0;
+        for (Item item : contents) {
+            sum += item.qty * item.price;
+        }
+        return sum;
     }
 
     public void checkout() {
+        System.out.println("The total is " + total());
+        contents = null;
     }
 
+    @Override
+    public String toString() {
+        return "Cart{" +
+                "contents=" + contents +
+                '}';
+    }
+
+    public Cart() {
+        this.contents = new ArrayList<>();
+    }
 }
