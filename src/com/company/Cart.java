@@ -5,16 +5,15 @@ import java.util.Vector;
 public class Cart {
 
     /**
-   * 
-   * @element-type Item
-   */
-  public Vector  contents;
+     * @element-type Item
+     */
+    public Vector contents;
 
-  public Integer total() {
-  return null;
-  }
+    public Integer total() {
+        return null;
+    }
 
-  public void checkout() {
-  }
+    public void checkout() {
+    }
 
 }

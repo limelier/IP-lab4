@@ -5,12 +5,11 @@ import java.util.Vector;
 public class Stock {
 
     /**
-   * 
-   * @element-type Item
-   */
-  public Vector  itemStock;
+     * @element-type Item
+     */
+    public Vector itemStock;
 
-  public void addToCart(String name, Integer qty, Cart cart) {
-  }
+    public void addToCart(String name, Integer qty, Cart cart) {
+    }
 
 }
